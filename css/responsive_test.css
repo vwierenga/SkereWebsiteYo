@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-.menu-l{
+#menu-l{
     display: none;
 }
 .menu-l-float{
@@ -32,16 +32,29 @@ html {
     margin: 0;
     padding: 0;
     background-color: #333;
+    overflow: hidden;
 }
-.menu li {
+.menu li a {
     padding: 8px;
-    margin-bottom: 7px;
-    background-color :#33b5e5;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
 }
-.menu li:hover {
-    background-color: #0099cc;
+/* Change the color on hover */
+.menu li a:hover {
+    background-color: #555;
+    color: white;
+}
+#menu-l li {
+    float: left;
+}
+#menu-l li a {
+    padding: 14px 16px;
+}
+.active {
+    background-color: #4caf50;
+    color: white;
 }
 .article {
     background-color: #ffffff;
@@ -61,7 +74,6 @@ html {
     text-align: center;
     font-size: 12px;
     padding: 15px;
-
 }
 
 #nav{
@@ -95,39 +107,8 @@ body {
         display: none;
     }
 
-    .menu-l{
+    #menu-l{
         display: block;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
-
-    li {
-        float: left;
-    }
-
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
-    /* Change the color on hover */
-    li a:hover {
-        background-color: #555;
-        color: white;
-    }
-
-    .active {
-        background-color: #4caf50;
-        color: white;
     }
 
 }
