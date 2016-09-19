@@ -17,7 +17,6 @@
 }
 [class*="col-"] {
     float: left;
-    padding: 15px;
 }
 html {
     font-family: "Lucida Sans", sans-serif;
@@ -66,7 +65,6 @@ html {
     color: #ffffff;
     text-align: center;
     font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .footer {
     background-color: #333;
@@ -127,5 +125,12 @@ body {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
+    .aside {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    [class*="col-"] {
+        padding: 15px;
+    }
 
 }
