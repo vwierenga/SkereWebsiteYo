@@ -97,6 +97,11 @@ ul{
 
 }
 
+#banner{
+    height: auto;
+    max-width: 100%;
+}
+
 body {
     background: url("../images/background.jpg");
 }
