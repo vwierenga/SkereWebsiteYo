@@ -10,33 +10,59 @@
 <div class="header">
     <h1>Skere Rappers</h1>
     <script type="text/javascript">
-        function displayHomepage()
+        function displayHome()
         {
-            document.getElementById('ProductList').style.display = "none"; // hide ProductList div tag
-            document.getElementById('Product').style.display = "none"; // hide Product div tag
-            document.getElementById('HomePage').style.display = "block"; // show HomePage div tag
+            document.getElementById('home').style.display = "block"; // show home div
+            document.getElementById('merch').style.display = "none"; // hide merch div
+            document.getElementById('tour').style.display = "none"; // hide tour div
+            document.getElementById('contact').style.display = "none"; // hide contact div
+            document.getElementById('homelink').classList.add('active'); //add active class to link
+            document.getElementById('merchlink').classList.remove('active'); //remove active class from link
+            document.getElementById('tourlink').classList.remove('active'); //remove active class from link
+            document.getElementById('contactlink').classList.remove('active'); //remove active class from link
         }
-        function displayProductList()
+        function displayMerch()
         {
-            document.getElementById('HomePage').style.display = "none"; // hide HomePage div tag
-            document.getElementById('Product').style.display = "none"; // hide Product div tag
-            document.getElementById('ProductList').style.display = "block"; // show ProductList div tag
+            document.getElementById('home').style.display = "none"; // hide home div
+            document.getElementById('merch').style.display = "block"; // show merch div
+            document.getElementById('tour').style.display = "none"; // hide tour div
+            document.getElementById('contact').style.display = "none"; //remove active class from link
+            document.getElementById('homelink').classList.remove('active'); //add active class to link
+            document.getElementById('merchlink').classList.add('active'); //add active class to link
+            document.getElementById('tourlink').classList.remove('active'); //remove active class from link
+            document.getElementById('contactlink').classList.remove('active'); //remove active class from link
         }
-        function displayProductPage()
+        function displayTour()
         {
-            document.getElementById('ProductList').style.display = "none"; // hide ProductList div tag
-            document.getElementById('HomePage').style.display = "none"; // hide HomePage div tag
-            document.getElementById('Product').style.display = "block"; // show Product div tag
+            document.getElementById('home').style.display = "none"; // hide home div
+            document.getElementById('merch').style.display = "none"; // hide merch div
+            document.getElementById('tour').style.display = "block"; // show tour div
+            document.getElementById('contact').style.display = "none"; // hide contact div
+            document.getElementById('homelink').classList.remove('active'); //remove active class from link
+            document.getElementById('merchlink').classList.remove('active'); //remove active class from link
+            document.getElementById('tourlink').classList.add('active'); //add active class to link
+            document.getElementById('contactlink').classList.remove('active'); //remove active class from link
+        }
+        function displayContact()
+        {
+            document.getElementById('home').style.display = "none"; // hide home div
+            document.getElementById('merch').style.display = "none"; // hide merch div
+            document.getElementById('tour').style.display = "none"; // hide tour div
+            document.getElementById('contact').style.display = "block"; // show contact div
+            document.getElementById('homelink').classList.remove('active'); //remove active class from link
+            document.getElementById('merchlink').classList.remove('active'); //remove active class from link
+            document.getElementById('tourlink').classList.remove('active'); //remove active class from link
+            document.getElementById('contactlink').classList.add('active'); //add active class to link
         }
     </script>
 </div>
 
 <div class="menu" id="menu-l">
     <ul>
-        <li><a href="index.html" class="active">Home</a> </li>
-        <li><a href="merch.html">Merch</a> </li>
-        <li><a href="tour.html">Tour</a> </li>
-        <li><a href="contact.html">Contact</a> </li>
+        <li><a href="#" onClick="displayHome()" id="homelink" class="active">Home</a> </li>
+        <li><a href="#" onClick="displayMerch()" id="merchlink">Merch</a> </li>
+        <li><a href="#" onClick="displayTour()" id="tourlink">Tour</a> </li>
+        <li><a href="#" onClick="displayContact()" id="contactlink">Contact</a> </li>
     </ul>
 </div>
 
@@ -74,9 +100,9 @@
             </p>
 
         </div>
-        <div class="article" id="merch">
+        <div class="article" id="merch" style="display: none;">
             <p>
-            <h1>Skere Rappers </h1>
+            <h1>Skere Rappers Merch</h1>
             <h4>Eerder bekend als Undercover</h4>
             <b>Skere Rappers</b> is een coverband uit Enschede. Vroeger stonden wij bekend als Undercover, maar deze naam zorgde voor veel problemen met mensen die ons probeerde te boeken.<br>
             Skere Rappers is opgericht in 1906. Hoe we al zo lang bestaan? Veel beweging, gezond eten, elke maand vers bloed en halfjaarlijkse tandarts controlles!
@@ -97,9 +123,9 @@
             </p>
 
         </div>
-        <div class="article" id="tour">
+        <div class="article" id="tour" style="display: none;">
             <p>
-            <h1>Skere Rappers </h1>
+            <h1>Skere Rappers Tour</h1>
             <h4>Eerder bekend als Undercover</h4>
             <b>Skere Rappers</b> is een coverband uit Enschede. Vroeger stonden wij bekend als Undercover, maar deze naam zorgde voor veel problemen met mensen die ons probeerde te boeken.<br>
             Skere Rappers is opgericht in 1906. Hoe we al zo lang bestaan? Veel beweging, gezond eten, elke maand vers bloed en halfjaarlijkse tandarts controlles!
@@ -120,9 +146,9 @@
             </p>
 
         </div>
-        <div class="article" id="contact">
+        <div class="article" id="contact" style="display: none;">
             <p>
-            <h1>Skere Rappers </h1>
+            <h1>Skere Rappers Contact</h1>
             <h4>Eerder bekend als Undercover</h4>
             <b>Skere Rappers</b> is een coverband uit Enschede. Vroeger stonden wij bekend als Undercover, maar deze naam zorgde voor veel problemen met mensen die ons probeerde te boeken.<br>
             Skere Rappers is opgericht in 1906. Hoe we al zo lang bestaan? Veel beweging, gezond eten, elke maand vers bloed en halfjaarlijkse tandarts controlles!
