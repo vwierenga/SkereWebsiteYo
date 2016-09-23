@@ -6,23 +6,49 @@
     <title>About - Skere Rappers</title>
     <script>
         function validateForm() {
+            var name = document.forms["contact"]["name"].value;
+            var email = document.forms["contact"]["email"].value;
             var tel = document.forms["contact"]["tel"].value;
-            dubbelnul = "00";
+            var message = document.forms["contact"]["message"].value;
+            doublezero = "00";
             plus = "+";
+            at = "@";
+            point = ".";
+            if (name == null || name == "") {
+                alert("Vul een naam in.");
+                return false;
+            }
+            if (email == null || email == "") {
+                alert("Vul een email in.");
+                return false;
+            } else if (email.indexOf(at) == -1) {
+                alert("Het emailadres moet een @ bevatten.")
+                return false;
+            } else if (email.indexOf(point) == -1) {
+                alert("Het emailadres moet een punt bevatten.")
+                return false;
+            }
             if (tel != null || tel != "") {
                 if (tel.length < 10) {
                     alert("Vul een geldig telefoon nummer in zonder spaties of streepjes.");
                     return false;
-                } else if (tel.length == 12 && (tel.indexOf(plus) !== -1)) {
+                } else if (tel.length == 12 && (tel.indexOf(plus) == -1)) {
                     alert("Vul een geldig telefoon nummer in zonder spaties of streepjes.");
                     return false;
-                } else if (tel.length == 13 && (tel.indexOf(dubbelnul) !== -1)) {
+                } else if (tel.length == 13 && (tel.indexOf(doublezero) == -1)) {
                     alert("Vul een geldig telefoon nummer in zonder spaties of streepjes.");
                     return false;
                 } else if (tel.length > 13) {
                     alert("Vul een geldig telefoon nummer in zonder spaties of streepjes.");
                     return false;
                 }
+            } else {
+                alert("Vul een geldig telefoon nummer in zonder spaties of streepjes.");
+                return false;
+            }
+            if (message == null || message == "") {
+                alert("Vul een bericht in.");
+                return false;
             }
         }
     </script>
@@ -55,8 +81,8 @@
     <div class="col-10 col-m-12">
         <div class="article">
             <form name="contact" action="" method="post" onsubmit="return validateForm()">
-                <h3>Quick Contact</h3>
-                <h4>Contact us today, and get reply with in 24 hours!</h4>
+                <h3>Contact</h3>
+                <h4>Neem vandaag contact met ons op en we reageren misschien binnen 24 uur! (waarschijnlijk niet)</h4>
                 <fieldset>
                     <input placeholder="Naam" type="text" name="name" required autofocus>
                 </fieldset>
