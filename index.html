@@ -7,6 +7,7 @@
     <script type="text/javascript" src="js/pageNavigation.js"></script>
 </head>
 <body>
+<script src="js/bandNav.js"></script>
 
 <div class="header">
     <h1>Skere Rappers</h1>
@@ -47,16 +48,46 @@
                 \m/ METAL
             </p>
             <p>
-            <h3>Members:</h3>
-            <ul>
-                <li>Vocals: Icy JJ Fish</li>
-                <li>Drum: Geert Wilders</li>
-                <li>Guitar: Ludwig van Beethoven</li>
-                <li>Bass: Kanye West</li>
-                <li>Synth: Erlend & Steinjo</li>
-                <li>Triangle: Dimebag Darrel</li>
-                <li>All-cowbell-drum: Corey Taylor</li>
-            </ul>
+                <h3>Members:</h3>
+                <ul>
+                    <li onclick="displayFish()">Vocals: Icy JJ Fish</li>
+                    <li onclick="displayGeert()">Drum: Geert Wilders</li>
+                    <li onclick="displayLudwig()">Guitar: Ludwig van Beethoven</li>
+                    <li onclick="displayKanye()">Bass: Kanye West (right?)</li>
+                    <li onclick="displayDeutchland()">Synth: Erlend & Steinjo</li>
+                    <li onclick="displayDimebag()">Triangle: Dimebag Darrel</li>
+                    <li onclick="displayCorey()">All-cowbell-drum: Corey Taylor</li>
+                </ul>
+
+                <div class="player" id="fish" style="display: none;">
+                    <iframe  src="https://www.youtube.com/embed/iq_d8VSM0nw" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="player" id="geert" style="display: none;">
+                    <iframe src="https://www.youtube.com/embed/LkUa5fCcDH0" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="player" id="ludwig" style="display: none;">
+                    <iframe src="https://www.youtube.com/embed/c1iZXyWLnXg" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="player" id="kanye" style="display: none;">
+                    <iframe src="https://www.youtube.com/embed/0x5ZRAVXxr8" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="player" id="deutchland" style="display: none;">
+                    <iframe src="https://www.youtube.com/embed/tT5x0DKqCus" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="player" id="dimebag" style="display: none;">
+                    <iframe src="https://www.youtube.com/embed/7m7njvwB-Ks" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="player" id="corey" style="display: none;">
+                    <iframe src="https://www.youtube.com/embed/XEEasR7hVhA" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+
             </p>
 
         </div>
